@@ -1,10 +1,6 @@
 import dash
 import dash_bootstrap_components as dbc
-
-import pandas as pd
 import os
-
-import pickle
 
 app = dash.Dash(
     __name__,
