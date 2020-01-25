@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+/* Sliders */
+.rc-slider-track {
+    background-color: lightblue;
+  }
+  
+.rc-slider-dot-active {  
+    border-color: rgb(121, 121, 210);
+    border: solid 4px lightblue;
+  }
+  
+.rc-slider-handle {
+    background-color: blue;
+    border-color: lightblue;
+  }
+  
+.rc.slider-handle:hover {
+    background-color: blue;
+    border-color: lightblue;
+  }
+  
+.rc.slider-handle-active:active {
+    background-color: blue;
+    border-color: lightblue;
+  }
+    
