@@ -11,6 +11,7 @@ from assets.styles import (
     key_facts_subtitle_style,
     key_facts_boxes_style,
     key_facts_period_style,
+    key_facts_period_title_style
 )
 
 from plot import (
@@ -42,7 +43,11 @@ def serve_key_facts_layout():
                     no_gutters=True,
                     children=[
                         dbc.Col(
-                            width=2,
+                            xs=12,
+                            sm=12,
+                            md=12,
+                            lg=12,
+                            xl=12,
                             children=html.Img(
                                 src=app.get_asset_url("furniture_logo.png"),
                                 style=key_facts_logo_style,
@@ -56,7 +61,11 @@ def serve_key_facts_layout():
                     no_gutters=True,
                     children=[
                         dbc.Col(
-                            width=12,
+                            xs=12,
+                            sm=12,
+                            md=12,
+                            lg=12,
+                            xl=12,
                             children=html.Div(
                                 children="Funny Furniture", style=key_facts_title_style
                             ),
@@ -69,10 +78,29 @@ def serve_key_facts_layout():
                     no_gutters=True,
                     children=[
                         dbc.Col(
-                            width=12,
+                            xs=12,
+                            sm=12,
+                            md=12,
+                            lg=12,
+                            xl=12,
                             children=html.Div(
                                 children="Online retailer for household commodities and interior decoration since 1995",
                                 style=key_facts_subtitle_style,
+                            ),
+                        )
+                    ],
+                ),
+
+                # SUBTITLE ROW
+                dbc.Row(
+                    justify="center",
+                    no_gutters=True,
+                    children=[
+                        dbc.Col(
+                            width=12,
+                            children=html.Div(
+                                children="KEY FACTS",
+                                style=key_facts_period_title_style,
                             ),
                         )
                     ],
@@ -84,43 +112,66 @@ def serve_key_facts_layout():
                     style={"margin-right": 140},
                     children=[
                         dbc.Col(
-                            width=1,
+                            xs=4,
+                            sm=4,
+                            md=4,
+                            lg=1,
+                            xl=1,
                             children=html.Div(
                                 children=indicator_plot(name="customers"),
                                 style=key_facts_boxes_style,
                             ),
                         ),
                         dbc.Col(
-                            width=1,
+                            xs=4,
+                            sm=4,
+                            md=4,
+                            lg=1,
+                            xl=1,
                             children=html.Div(
                                 children=indicator_plot(name="countries"),
                                 style=key_facts_boxes_style,
                             ),
                         ),
                         dbc.Col(
-                            width=1,
+                            xs=4,
+                            sm=4,
+                            md=4,
+                            lg=1,
+                            xl=1,
                             children=html.Div(
                                 children=indicator_plot(name="quantities"),
                                 style=key_facts_boxes_style,
                             ),
                         ),
                         dbc.Col(
-                            width=1,
-                            # )
+                            xs=4,
+                            sm=4,
+                            md=4,
+                            lg=1,
+                            xl=1,
                             children=html.Div(
                                 children=indicator_plot(name="orders"),
                                 style=key_facts_boxes_style,
                             ),
                         ),
                         dbc.Col(
-                            width=1,
+                            xs=4,
+                            sm=4,
+                            md=4,
+                            lg=1,
+                            xl=1,
                             children=html.Div(
                                 children=indicator_plot(name="products"),
                                 style=key_facts_boxes_style,
                             ),
                         ),
                         dbc.Col(
-                            width=1,
+                            xs=4,
+                            sm=4,
+                            md=4,
+                            lg=1,
+                            xl=1,
                             children=html.Div(
                                 children=indicator_plot(name="revenues"),
                                 style=key_facts_boxes_style,
@@ -136,7 +187,7 @@ def serve_key_facts_layout():
                         dbc.Col(
                             width=12,
                             children=html.Div(
-                                children="Feb 2019 - Nov 2019",
+                                children="February - November 2019",
                                 style=key_facts_period_style,
                             ),
                         )
@@ -440,7 +491,8 @@ def serve_premium_content_layout():
                                 children="PREMIUM CONTENT", style={
                                 "display":"block",
                                 "text-align":"center",
-                                "margin-top":300,
+                                "margin-top":"25%",
+                                # "margin-bottom":"50%",
                                 "font-family": "Oswald Stencil, sans-serif",
                                 "font-size": 78,
                                  "color": "white",

@@ -31,7 +31,7 @@ tabs = dcc.Tabs(
             selected_style=tab_selected_style,
         ),
         dcc.Tab(
-            label="Customer Lifetime Value",
+            label="Lifetime Value Prediction",
             value="tab-4",
             style=tab_style,
             selected_style=tab_selected_style,

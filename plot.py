@@ -270,7 +270,7 @@ def retention_monthly():
         plot_bgcolor="rgba(0,0,0,0)",
         autosize=True,
         height=280,
-        margin=dict(l=0, r=0, t=25, b=25, pad=0),
+        margin=dict(l=0, r=0, t=35, b=25, pad=0),
         polar=dict(
             radialaxis=dict(
                 visible=True,
@@ -428,17 +428,7 @@ def rfm_histogram(
     )
 
     fig.update_layout(
-        annotations=[
-            go.layout.Annotation(
-                x=0.55,
-                y=0.3,
-                showarrow=False,
-                text="Days",
-                xref="paper",
-                yref="paper",
-                font=dict(family="sans-serif", color="black", size=14),
-            )
-        ],
+
         font=dict(family="Oswald Light, sans-serif", size=14, color="lightblue"),
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",

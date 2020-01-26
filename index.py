@@ -29,6 +29,7 @@ app.layout = dbc.Container(
     style=container_style,
     children=[
         dbc.Row(
+            style={"margin":0, "padding":0},
             no_gutters=True,
             children=[
                 navbar,

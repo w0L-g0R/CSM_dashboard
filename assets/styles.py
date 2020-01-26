@@ -8,8 +8,11 @@ container_style = {
     "height": height,
     "width": "100%",
     "margin": 0,
-    "padding-right": 0,
-    "padding-left": 0,
+    "padding": 0,
+    # "margin-bottom": 25,
+    # "padding-top": 0,
+    # "padding-right": 0,
+    # "padding-left": 0,
 }
 
 body_style = {
@@ -17,7 +20,7 @@ body_style = {
     "background-repeat": "no-repeat",
     "background-size": "cover",
     "height": height,
-    "border": "1px white solid",
+    # "border": "1px white solid",
     "width": "100%",
     "margin": 0,
     "padding": 0,
@@ -34,7 +37,7 @@ navbar_background_style = {
     "textAlign": "center",
     "font-family": "Impact, white, sans-serif",
     "margin": 0,
-    "border": "1px white solid",
+    # "border": "1px white solid",
     "width": "100%",
 }
 
@@ -43,7 +46,7 @@ navbar_background_style = {
 """ __________________________________________________________________ """
 
 navbar_logo_style = {
-    "margin-top": 20,
+    "margin-top": 25,
     "height": "auto",
     "display": "block",
     "margin-left": "auto",
@@ -130,16 +133,6 @@ tab_selected_style = {
 """                               CONTENT                              """
 """ __________________________________________________________________ """
 
-# background_style = {
-#     "background-image": 'url("/assets/images/body.png")',
-#     "background-repeat": "no-repeat",
-#     "background-size": "cover",
-#     "margin": 0,
-#     "padding": 0,
-#     "height": 752,
-#     "width": "100%",
-# }
-
 header_box_style = {
     "-webkit-box-shadow": "-2px 9px 17px -3px rgba(0,0,0,0.75)",
     "-moz-box-shadow": "-2px 9px 17px -3px rgba(0,0,0,0.75)",
@@ -148,7 +141,7 @@ header_box_style = {
     "font-family": "Oswald Light, sans-serif",
     "font-size": 26,
     "color": "white",
-    "margin-top": 8,
+    "margin-top": 10,
     "margin-left": 5,
     "height": 56,
     "border-top": "10px rgba(173, 216, 230, 0.3) solid",
@@ -167,7 +160,7 @@ graph_box_title_style = {
     "height": 35,
 }
 
-key_facts_logo_style = {"margin-top": 280, "margin-left": 40, "height": 100}
+key_facts_logo_style = {"margin-top": "15%", "margin-left": "45%", "height": 100}
 
 key_facts_title_style = {
     "font-family": "Oswald Light, sans-serif",
@@ -185,14 +178,14 @@ key_facts_subtitle_style = {
     "font-size": 30,
     "text-align": "center",
     "margin-top": 0,
+    "margin-bottom": 20,
     "color": "rgba(153, 153, 204, 1)",
     "margin-left": "auto",
     "margin-right": "auto",
-    "height": 100,
+    # "height": 100,
 }
 
 key_facts_boxes_style = {
-    "margin-top": -40,
     "height": 100,
     "width": 120,
     "display": "block",
@@ -202,13 +195,23 @@ key_facts_boxes_style = {
     "border-bottom": "1px rgba(102, 102, 153, 0.75) solid",
 }
 
-key_facts_period_style = {
+key_facts_period_title_style = {
     "font-family": "Oswald ExtraLight, sans-serif",
     "font-size": 20,
     "text-align": "center",
+    "margin-bottom": 0,
     "margin-top": 10,
     "color": "white",
     "margin-left": "auto",
     "margin-right": "auto",
-    "height": 100,
+}
+
+key_facts_period_style = {
+    "font-family": "Oswald ExtraLight, sans-serif",
+    "font-size": 20,
+    "text-align": "center",
+    "margin-bottom": 40,
+    "color": "white",
+    "margin-left": "auto",
+    "margin-right": "auto",
 }
